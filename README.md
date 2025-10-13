@@ -188,10 +188,6 @@ A curated collection of essential books, courses, and documentation that form th
 
 - **[Machine Learning and deep learning (Ali Sharifi Zarchi) ](https://ocw.sharif.ir/course/id/545/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86)**  
         [GitHub Repository](https://github.com/SharifiZarchi/Introduction_to_Machine_Learning/tree/main)
-
-- **Deep Learning in Python** — *DataCamp*  
-  Practical approach to deep learning with Keras and TensorFlow.
-
 ---
 
 ### Libraries & Frameworks
