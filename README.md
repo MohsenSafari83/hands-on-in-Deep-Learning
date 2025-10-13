@@ -1,3 +1,5 @@
+[deep learning](images/1630151226093.jpg)
+
 #  Hands-On in Deep Learning
 
 > A personal deep learning roadmap and project collection — documenting my journey through theory, implementation, and experimentation in Deep Learning.
