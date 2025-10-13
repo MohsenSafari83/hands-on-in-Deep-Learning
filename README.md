@@ -1,4 +1,4 @@
-[deep learning](images/1630151226093.jpg)
+![deep learning](images/1630151226093.jpg)
 
 #  Hands-On in Deep Learning
 
