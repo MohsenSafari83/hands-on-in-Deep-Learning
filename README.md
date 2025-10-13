@@ -15,7 +15,7 @@ It aims to:
 
 ---
 
-## ⚙️ Machine Learning vs Deep Learning
+##  Machine Learning vs Deep Learning
 
 | Machine Learning | Deep Learning |
 |:--|:--|
@@ -114,7 +114,7 @@ Power models like **BERT** and **GPT**, excelling in **translation**, **text gen
 | **Energy Consumption** | Large-scale models consume significant computational energy. |
 
 ## 🌳 Project Tree Overview
-
+```
 hands-on-in-deep-learning
 │
 ├── Foundations
@@ -158,4 +158,91 @@ hands-on-in-deep-learning
     ├── Papers & Theory Notes
     ├── Book Summaries (e.g., Hands-On ML)
     └── Useful Scripts
+```
+## Resources for Deep Learning
+
+A curated collection of essential books, courses, and documentation that form the foundation of deep learning knowledge and practical skills.
+
+---
+
+### Books
+
+- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** — *Aurélien Géron*  
+  Comprehensive guide covering both theory and implementation in TensorFlow and Keras.  
+  [GitHub Repository: ageron/handson-ml2](https://github.com/ageron/handson-ml2)
+
+- **Deep Learning** — *Ian Goodfellow, Yoshua Bengio, Aaron Courville*  
+  Theoretical foundation of neural networks and modern deep learning.
+
+---
+
+###  Online Courses
+
+- **Deep Learning Specialization** — *Andrew Ng* (Coursera)  
+  Five-course specialization introducing neural networks, CNNs, RNNs, and sequence models.  
+   [Coursera: Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+
+- **Deep Learning A–Z™: Hands-On Artificial Neural Networks** — *Udemy (Kirill Eremenko, Hadelin de Ponteves)*  
+  Practical deep learning course with hands-on projects covering **ANNs**, **CNNs**, **RNNs**, **SOMs**, and **Boltzmann Machines**.  
+   [Udemy: Deep Learning A–Z™](https://www.udemy.com/course/deeplearning/)
+
+- **[Machine Learning and deep learning (Ali Sharifi Zarchi) ](https://ocw.sharif.ir/course/id/545/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86)**  
+        [GitHub Repository](https://github.com/SharifiZarchi/Introduction_to_Machine_Learning/tree/main)
+
+- **Deep Learning in Python** — *DataCamp*  
+  Practical approach to deep learning with Keras and TensorFlow.
+
+---
+
+### Libraries & Frameworks
+
+- **TensorFlow** — Official library for large-scale machine learning and deep learning.  
+  📖 [TensorFlow Documentation](https://www.tensorflow.org/)
+
+- **PyTorch** — Open-source deep learning framework developed by Facebook AI Research.  
+  📖 [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
+
+- **Keras** — High-level neural networks API running on top of TensorFlow.  
+  📖 [Keras Documentation](https://keras.io/)
+
+- **scikit-learn** — Essential toolkit for traditional ML models and preprocessing.  
+  📖 [scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+
+- **NumPy** — Core library for numerical computing in Python.  
+  📖 [NumPy Documentation](https://numpy.org/doc/stable/)
+
+- **pandas** — Data manipulation and analysis library.  
+  📖 [pandas Documentation](https://pandas.pydata.org/docs/)
+
+- **Matplotlib** — Plotting and visualization library.  
+  📖 [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+
+- **Seaborn** — Statistical data visualization built on top of Matplotlib.  
+  📖 [Seaborn Documentation](https://seaborn.pydata.org/)
+
+- **DataCamp** — Online learning platform for Python, ML, and AI.  
+  🌐 [DataCamp](https://www.datacamp.com/)
+
+- **GeeksforGeeks – Machine Learning Tutorials**  
+  Beginner-friendly tutorials and conceptual explanations.  
+  🌐 [GeeksforGeeks ML Tutorials](https://www.geeksforgeeks.org/machine-learning/)
+
+---
+
+### Suggested Learning Path
+
+1. Start with **Hands-On Machine Learning** by Aurélien Géron (for foundational DL coding).
+2. Follow **Andrew Ng’s Deep Learning Specialization** (for conceptual mastery).
+3. Experiment with **TensorFlow** and **PyTorch** tutorials (for implementation).
+4. Reinforce learning by replicating small projects (MNIST, CIFAR-10, text classification).
+5. Gradually move toward **Transformers**, **GANs**, and **Reinforcement Learning** topics.
+
+---
+
+> *"The best way to learn deep learning is to build, test, fail, and iterate — again and again."*
+
+---
+## Connect with me
+- [Telegram](https://t.me/Mohsenn_sri)
+- [linkedin](https://www.linkedin.com/in/mohsenn-safari)
 
