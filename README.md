@@ -113,6 +113,49 @@ Power models like **BERT** and **GPT**, excelling in **translation**, **text gen
 | **Hyperparameter Sensitivity** | Requires extensive tuning (learning rate, batch size, etc.) for optimal results. |
 | **Energy Consumption** | Large-scale models consume significant computational energy. |
 
+## 🌳 Project Tree Overview
 
-
+hands-on-in-deep-learning
+│
+├── Foundations
+│   ├── Introduction_to_Neural_Networks
+│
+├── Neural Network Architectures
+│   ├── MLP (Multi-Layer Perceptron)
+│   ├── CNN (Convolutional Neural Network)
+│   ├── RNN (Recurrent Neural Network)
+│   ├── LSTM & GRU
+│   ├── Transformer
+│   └── Autoencoder
+│
+├── Generative Models
+│   ├── GAN (Generative Adversarial Network)
+│   ├── VAE (Variational Autoencoder)
+│   └── Diffusion Models (optional - advanced)
+│
+├── Applications & Projects
+│   ├── Computer Vision
+│   │   ├── MNIST Digit Classification
+│   │   ├── CIFAR-10 Image Classification
+│   │   └── Object Detection Intro (YOLOv8 or similar)
+│   └── Reinforcement Learning
+│       ├── RL-Basics
+│       └── Game Agents (DQN / PPO)
+│
+├── Training & Optimization
+│   ├── Loss Functions
+│   ├── Optimizers (SGD, Adam, etc.)
+│   ├── Regularization & Dropout
+│   ├── Batch Normalization
+│   └── Hyperparameter Tuning
+│
+├── Tools & Frameworks
+│   ├── PyTorch
+│   ├── TensorFlow-Keras
+│   ├── Experiment Tracking (Weights & Biases / MLflow)
+│   └── Deployment & Serving
+└── Extras
+    ├── Papers & Theory Notes
+    ├── Book Summaries (e.g., Hands-On ML)
+    └── Useful Scripts
 
