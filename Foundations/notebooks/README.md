@@ -1,4 +1,4 @@
-# Foundations of Deep Learning — Theory Notebooks
+#  Foundations of Deep Learning — Theory Notebooks
 
 This section introduces the **fundamental concepts** behind Deep Learning — starting from the distinction between **Machine Learning (ML)** and **Deep Learning (DL)**, and progressing through **Artificial Neural Networks (ANNs)**, the **Perceptron**, and the **Multi-Layer Perceptron (MLP)**.
 
@@ -6,7 +6,7 @@ It aims to provide both the **intuitive understanding** and **mathematical formu
 
 ---
 
-## Topics Covered
+##  Topics Covered
 
 ### 1. Machine Learning vs Deep Learning
 
@@ -18,15 +18,15 @@ It aims to provide both the **intuitive understanding** and **mathematical formu
 | Easier to interpret and debug | More complex, works as a “black box” |
 | Can be trained efficiently on CPUs | Often requires GPUs or TPUs |
 | Faster training but limited scalability | Slower training but highly scalable and accurate for complex tasks |
- 
-> Deep Learning is a subset of Machine Learning that uses multi-layered neural networks to automatically learn abstract features from raw data.
+
+**Key Idea:**  
+Deep Learning is a subset of Machine Learning that uses multi-layered neural networks to automatically learn abstract features from raw data.
 
 ---
 
 ### 2. What Are Deep Neural Networks (DNNs)?
 
-A **Deep Neural Network (DNN)** extends the idea of a traditional **Artificial Neural Network (ANN)** by adding multiple hidden layers between the input and output.
-
+A **Deep Neural Network (DNN)** extends the idea of a traditional **Artificial Neural Network (ANN)** by adding multiple hidden layers between the input and output.  
 Each layer transforms the data into higher-level abstractions, allowing the model to learn complex mappings.
 
 **Mathematical Formulation:**
@@ -39,11 +39,12 @@ $$
 \mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
 $$
 
-Where:
-- \( \mathbf{W}^{(l)} \): Weight matrix of layer \( l \)  
-- \( \mathbf{b}^{(l)} \): Bias vector  
-- \( \sigma(\cdot) \): Activation function  
-- \( \mathbf{a}^{(l-1)} \): Activations from the previous layer  
+**Where:**
+
+- \( \mathbf{W}^{(l)} \): weight matrix of layer \( l \)  
+- \( \mathbf{b}^{(l)} \): bias vector  
+- \( \sigma(\cdot) \): activation function  
+- \( \mathbf{a}^{(l-1)} \): activations from the previous layer  
 
 **Comparison:**
 
@@ -66,7 +67,8 @@ $$
 y = f(\mathbf{w}^T \mathbf{x} + b)
 $$
 
-Where:
+**Where:**
+
 - \( \mathbf{w} \): weight vector  
 - \( \mathbf{x} \): input vector  
 - \( b \): bias term  
@@ -99,13 +101,15 @@ $$
 **Activation Functions:**
 - Sigmoid: \( \sigma(x) = \frac{1}{1 + e^{-x}} \)
 - Tanh: \( \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \)
-- ReLU: \( \max(0, x) \)
+- ReLU: \( \text{ReLU}(x) = \max(0, x) \)
 
 **Loss Function Example:**
+
 - Mean Squared Error (MSE):
-  $$
-  \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-  $$
+
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
 
 **Conceptual Steps:**
 1. Initialize weights and biases randomly  
@@ -115,13 +119,18 @@ $$
 
 ---
 
+##  Recommended Reading
+
+- **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** — Aurélien Géron (Chapters 10–11)  
+- **Deep Learning Specialization (Andrew Ng, Coursera)** — Course 1: *Neural Networks and Deep Learning*  
+- **Deep Learning A–Z™ (Udemy)** — Section 1–2: *ANN and MLP Basics*  
+- **3Blue1Brown YouTube Series** — *Neural Networks* and *Backpropagation* explained visually  
+
+---
+
 ## Sources & References
 
 - [**Deep Learning (DL) vs Machine Learning (ML): A Comparative Guide** — DataCamp](https://www.datacamp.com/tutorial/machine-deep-learning)  
 - [**Introduction to Neural Networks** — DataCamp](https://www.datacamp.com/tutorial/introduction-to-deep-neural-networks)  
 - [**Multilayer Perceptrons in Machine Learning** — DataCamp](https://www.datacamp.com/tutorial/multilayer-perceptrons-in-machine-learning)  
 - [**Neural Networks – A Beginner’s Guide** — GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/neural-networks-a-beginners-guide/)
-
----
-
-> These sources were used to structure and explain the theoretical concepts presented in the **Foundations** notebooks — including ML vs DL comparison, introduction to DNNs, Perceptron fundamentals, and Multi-Layer Perceptron (MLP) theory.
