@@ -1,3 +1,4 @@
+![dl](images/wall.jpg)
 #  Foundations of Deep Learning — Theory Notebooks
 
 This section introduces the **fundamental concepts** behind Deep Learning — starting from the distinction between **Machine Learning (ML)** and **Deep Learning (DL)**, and progressing through **Artificial Neural Networks (ANNs)**, the **Perceptron**, and the **Multi-Layer Perceptron (MLP)**.
