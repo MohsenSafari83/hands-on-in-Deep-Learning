@@ -9,7 +9,7 @@
 
 | **Main Section** | **Learning Type** | **Algorithm / Topic** | **Notebook / Project Link** |
 |:--|:--|:--|:--|
-| **FOUNDATIONS** | Theory | ML vs DL,Perceptron and MLP | [ML vs DL Notebook](https://github.com/MohsenSafari83/hands-on-in-Deep-Learning/tree/main/Foundations/notebooks) |
+| **FOUNDATIONS** | Theory | ML vs DL,Perceptron and MLP | [Introduction to Neural Networks](https://github.com/MohsenSafari83/hands-on-in-Deep-Learning/tree/main/Foundations/notebooks) |
 |  | Project | Perceptron / MLP Implementation | [ MLP Project](./0_Foundations/projects/MLP_Project) |
 | **ARCHITECTURES** | Computer Vision | Convolutional Neural Networks (CNNs) | [ CNN Theory](./1_Architectures/notebooks/CNNs.ipynb) |
 |  | Project | Image Classification using CNN | [ CNN Project](./1_Architectures/projects/CNN_Image_Classifier) |
@@ -249,9 +249,6 @@ A curated collection of essential books, courses, and documentation that form th
 
 - **TensorFlow** — Official library for large-scale machine learning and deep learning.  
   📖 [TensorFlow Documentation](https://www.tensorflow.org/)
-
-- **PyTorch** — Open-source deep learning framework developed by Facebook AI Research.  
-  📖 [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 
 - **Keras** — High-level neural networks API running on top of TensorFlow.  
   📖 [Keras Documentation](https://keras.io/)
