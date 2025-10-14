@@ -25,14 +25,14 @@ In this notebook, the following concepts are explained step-by-step:
 ...
 * Its primary purpose: finding the **minimum of the Cost (Loss) Function** using derivatives (gradients).
 
-![Visualization of Gradient Descent Steps](images/image1_xiivzu.gif)
+![Visualization of Gradient Descent Steps](images/image1_xiivzu.avif)
 
 ---
 ### Backpropagation
 ...
 * Explaining how **error is calculated and propagated backward** to previous layers to update weights.
 
-![Diagram of Backpropagation Flow](images/image_8ee636b259.gif)
+![Diagram of Backpropagation Flow](images/image_8ee636b259.avif)
 
 ---
 ##  Resources
