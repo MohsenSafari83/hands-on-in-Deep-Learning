@@ -9,7 +9,7 @@
 
 | **Main Section** | **Learning Type** | **Algorithm / Topic** | **Notebook / Project Link** |
 |:--|:--|:--|:--|
-| **FOUNDATIONS** | Theory | ML vs DL,Perceptron and MLP | [ML vs DL Notebook](./0_Foundations/notebooks/00_ML_vs_DL.ipynb) |
+| **FOUNDATIONS** | Theory | ML vs DL,Perceptron and MLP | [ML vs DL Notebook](https://github.com/MohsenSafari83/hands-on-in-Deep-Learning/tree/main/Foundations/notebooks) |
 |  | Project | Perceptron / MLP Implementation | [ MLP Project](./0_Foundations/projects/MLP_Project) |
 | **ARCHITECTURES** | Computer Vision | Convolutional Neural Networks (CNNs) | [ CNN Theory](./1_Architectures/notebooks/CNNs.ipynb) |
 |  | Project | Image Classification using CNN | [ CNN Project](./1_Architectures/projects/CNN_Image_Classifier) |
