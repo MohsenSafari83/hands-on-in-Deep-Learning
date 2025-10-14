@@ -5,7 +5,29 @@
 > A personal deep learning roadmap and project collection — documenting my journey through theory, implementation, and experimentation in Deep Learning.
 
 ---
+## Deep Learning Roadmap — Theory & Projects Overview
 
+| **Main Section** | **Learning Type** | **Algorithm / Topic** | **Notebook / Project Link** |
+|:--|:--|:--|:--|
+| **FOUNDATIONS** | Theory | ML vs DL,Perceptron and MLP | [ML vs DL Notebook](./0_Foundations/notebooks/00_ML_vs_DL.ipynb) |
+|  | Project | Perceptron / MLP Implementation | [ MLP Project](./0_Foundations/projects/MLP_Project) |
+| **ARCHITECTURES** | Computer Vision | Convolutional Neural Networks (CNNs) | [ CNN Theory](./1_Architectures/notebooks/CNNs.ipynb) |
+|  | Project | Image Classification using CNN | [ CNN Project](./1_Architectures/projects/CNN_Image_Classifier) |
+|  | Sequential Modeling | Recurrent Neural Networks (RNNs) / LSTM / GRU | [RNN Theory](./1_Architectures/notebooks/RNNs_LSTM.ipynb) |
+|  | Project | Sentiment Analysis (LSTM-based) | [ NLP Project](./1_Architectures/projects/Sentiment_Analysis) |
+| **ADVANCED NETWORKS** | Generative Modeling | Autoencoders | [ Autoencoder Theory](./2_Advanced/Autoencoders.ipynb) |
+|  | Generative Modeling | Generative Adversarial Networks (GANs) | [ GANs Notebook](./2_Advanced/GANs.ipynb) |
+|  | NLP | Transformer Architecture / Attention | [ Transformers Theory](./2_Advanced/Transformers.ipynb) |
+|  | Project | Text Generation using Transformer | [Transformer Project](./2_Advanced/projects/Text_Generation) |
+| **OPTIMIZATION & TRAINING** | Core Concepts | Backpropagation / Gradient Descent | [ Optimization Notebook](./3_Optimization_Training/Backpropagation.ipynb) |
+|  | Regularization | Dropout / Batch Normalization | [ Regularization Notebook](./3_Optimization_Training/Regularization.ipynb) |
+|  | Project | Training MLP with Backpropagation | [ MLP Training Project](./3_Optimization_Training/projects/MLP_Backprop) |
+| **APPLICATIONS** | Computer Vision | Object Detection (YOLO / SSD) | [ Object Detection Project](./4_Applications/CV_Object_Detection) |
+|  | Reinforcement Learning | Deep Q-Learning | [ RL Project](./4_Applications/RL_DeepQLearning) |
+
+> This roadmap connects theoretical notebooks and hands-on projects in a progressive learning path —  
+> starting from the Perceptron to advanced architectures like Transformers and GANs.
+---
 ## Purpose
 
 This repository serves as my **personal learning roadmap** for Deep Learning (DL) — a structured and practical path covering both theory and projects.  
