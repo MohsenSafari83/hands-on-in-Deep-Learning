@@ -117,49 +117,88 @@ Power models like **BERT** and **GPT**, excelling in **translation**, **text gen
 
 ## 🌳 Project Tree Overview
 ```
-hands-on-in-deep-learning
+hands-on-in Deep Learning /
 │
-├── Foundations
-│   ├── Introduction_to_Neural_Networks
+├── 0_Foundations/
+│   ├── README.md                     # Concepts overview (math, ML vs DL, perceptron)
+│   ├── notebooks/                    # Jupyter notebooks (step-by-step explanations)
+│   │   ├── perceptron_theory.ipynb
+│   │   └── activation_functions.ipynb
+│   └── projects/                     # Small related projects
+│       ├── perceptron_classifier/
+│       └── loss_function_visualizer/
 │
-├── Neural Network Architectures
-│   ├── MLP (Multi-Layer Perceptron)
-│   ├── CNN (Convolutional Neural Network)
-│   ├── RNN (Recurrent Neural Network)
-│   ├── LSTM & GRU
-│   ├── Transformer
-│   └── Autoencoder
+├── 1_ANN_and_MLP/
+│   ├── README.md                     # ANN/MLP theory (architecture, forward/backprop)
+│   ├── notebooks/
+│   │   ├── ann_forward_pass.ipynb
+│   │   └── mlp_from_scratch.ipynb
+│   └── projects/
+│       ├── mnist_mlp_classifier/
+│       │   ├── model.py
+│       │   ├── train.py
+│       │   ├── evaluate.py
+│       │   ├── requirements.txt
+│       │   └── README.md
+│       └── regression_with_ann/
 │
-├── Generative Models
-│   ├── GAN (Generative Adversarial Network)
-│   ├── VAE (Variational Autoencoder)
-│   └── Diffusion Models (optional - advanced)
+├── 2_CNN/
+│   ├── README.md
+│   ├── notebooks/
+│   │   ├── cnn_intro.ipynb
+│   │   ├── filters_and_convolution.ipynb
+│   │   └── cnn_with_keras.ipynb
+│   └── projects/
+│       ├── cifar10_cnn/
+│       └── image_classification_transfer_learning/
 │
-├── Applications & Projects
-│   ├── Computer Vision
-│   │   ├── MNIST Digit Classification
-│   │   ├── CIFAR-10 Image Classification
-│   │   └── Object Detection Intro (YOLOv8 or similar)
-│   └── Reinforcement Learning
-│       ├── RL-Basics
-│       └── Game Agents (DQN / PPO)
+├── 3_RNN_and_LSTM/
+│   ├── README.md
+│   ├── notebooks/
+│   │   ├── rnn_intro.ipynb
+│   │   └── lstm_text_generation.ipynb
+│   └── projects/
+│       ├── sentiment_analysis_rnn/
+│       └── time_series_forecasting_lstm/
 │
-├── Training & Optimization
-│   ├── Loss Functions
-│   ├── Optimizers (SGD, Adam, etc.)
-│   ├── Regularization & Dropout
-│   ├── Batch Normalization
-│   └── Hyperparameter Tuning
+├── 4_Transformers/
+│   ├── README.md
+│   ├── notebooks/
+│   │   ├── self_attention_mechanism.ipynb
+│   │   └── transformer_architecture.ipynb
+│   └── projects/
+│       ├── text_translation_transformer/
+│       └── question_answering_BERT/
 │
-├── Tools & Frameworks
-│   ├── PyTorch
-│   ├── TensorFlow-Keras
-│   ├── Experiment Tracking (Weights & Biases / MLflow)
-│   └── Deployment & Serving
-└── Extras
-    ├── Papers & Theory Notes
-    ├── Book Summaries (e.g., Hands-On ML)
-    └── Useful Scripts
+├── 5_Generative_Models/
+│   ├── README.md
+│   ├── notebooks/
+│   │   ├── autoencoder_basics.ipynb
+│   │   ├── gan_intro.ipynb
+│   │   └── variational_autoencoder.ipynb
+│   └── projects/
+│       ├── face_generation_GAN/
+│       └── image_denoising_autoencoder/
+│
+├── 6_Reinforcement_Learning/
+│   ├── README.md
+│   ├── notebooks/
+│   │   ├── rl_intro.ipynb
+│   │   └── q_learning.ipynb
+│   └── projects/
+│       ├── cartpole_agent/
+│       └── game_ai_with_dqn/
+│
+├── 7_Resources/
+│   ├── books.md
+│   ├── courses.md
+│   ├── libraries.md
+│   └── README.md
+│
+├── environment.yml
+├── requirements.txt
+└── README.md                       # Main overview and roadmap
+
 ```
 ## Resources for Deep Learning
 
