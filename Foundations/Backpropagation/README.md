@@ -13,6 +13,8 @@ In this notebook, the following concepts are explained step-by-step:
 * **Gradient Descent Algorithm:**
     * Defining Gradient Descent as a powerful **optimization algorithm**.
     * Its primary purpose: finding the **minimum of the Cost (Loss) Function** using derivatives (gradients).
+  ![Gradient Descent Algorithm](images/gd.png)
+
 * **Backpropagation:**
     * The core training mechanism used in all modern neural networks.
     * Explaining how **error is calculated and propagated backward** to previous layers to update weights.
@@ -20,6 +22,7 @@ In this notebook, the following concepts are explained step-by-step:
     * Ease of implementation and accessibility via deep learning libraries like **PyTorch** and **Keras**.
 * **Limitations and Challenges:**
     * Discussing the impact of **Data Quality** and challenges related to **long Training Duration** and the **Matrix-Based Complexity** in large networks.
+  ![Backpropagation](images/bkpr.jpg)
 ---
 ### Gradient Descent
 
