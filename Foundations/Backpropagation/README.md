@@ -21,6 +21,20 @@ In this notebook, the following concepts are explained step-by-step:
 * **Limitations and Challenges:**
     * Discussing the impact of **Data Quality** and challenges related to **long Training Duration** and the **Matrix-Based Complexity** in large networks.
 ---
+### Gradient Descent
+...
+* Its primary purpose: finding the **minimum of the Cost (Loss) Function** using derivatives (gradients).
+
+![Visualization of Gradient Descent Steps](images/image1_xiivzu.gif)
+
+---
+### Backpropagation
+...
+* Explaining how **error is calculated and propagated backward** to previous layers to update weights.
+
+![Diagram of Backpropagation Flow](images/image_8ee636b259.gif)
+
+---
 ##  Resources
 
 To deepen your understanding of these fundamental algorithms, the following resources are highly recommended:
