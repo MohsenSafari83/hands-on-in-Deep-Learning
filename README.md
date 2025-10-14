@@ -144,11 +144,11 @@ hands-on-in Deep Learning /
 ├── 0_Foundations/
 │   ├── README.md                     # Concepts overview (math, ML vs DL, perceptron)
 │   ├── notebooks/                    # Jupyter notebooks (step-by-step explanations)
-│   │   ├── perceptron_theory.ipynb
-│   │   └── activation_functions.ipynb
+│   │   ├── Introduction_to_Neural_Networks.ipynb
+│   │   └── README.md
 │   └── projects/                     # Small related projects
 │       ├── perceptron_classifier/
-│       └── loss_function_visualizer/
+│       └── README.md
 │
 ├── 1_ANN_and_MLP/
 │   ├── README.md                     # ANN/MLP theory (architecture, forward/backprop)
@@ -210,14 +210,6 @@ hands-on-in Deep Learning /
 │   └── projects/
 │       ├── cartpole_agent/
 │       └── game_ai_with_dqn/
-│
-├── 7_Resources/
-│   ├── books.md
-│   ├── courses.md
-│   ├── libraries.md
-│   └── README.md
-│
-├── environment.yml
 ├── requirements.txt
 └── README.md                       # Main overview and roadmap
 
