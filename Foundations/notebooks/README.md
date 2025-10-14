@@ -1,4 +1,4 @@
-![dl](images/walll.jpg)
+![dl](images/41377_2024_1590_Fig3_HTML.png)
 
 #  Foundations of Deep Learning — Theory Notebooks
 
