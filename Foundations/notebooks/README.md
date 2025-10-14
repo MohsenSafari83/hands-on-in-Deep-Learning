@@ -2,8 +2,6 @@
 
 This section introduces the **fundamental concepts** behind Deep Learning — starting from the distinction between **Machine Learning (ML)** and **Deep Learning (DL)**, and progressing through **Artificial Neural Networks (ANNs)**, the **Perceptron**, and the **Multi-Layer Perceptron (MLP)**.
 
-It aims to provide both the **intuitive understanding** and **mathematical formulation** of how neural networks process and learn from data.
-
 ---
 
 ##  Topics Covered
@@ -19,118 +17,88 @@ It aims to provide both the **intuitive understanding** and **mathematical formu
 | Can be trained efficiently on CPUs | Often requires GPUs or TPUs |
 | Faster training but limited scalability | Slower training but highly scalable and accurate for complex tasks |
 
-**Key Idea:**  
-Deep Learning is a subset of Machine Learning that uses multi-layered neural networks to automatically learn abstract features from raw data.
-
 ---
 
 ### 2. What Are Deep Neural Networks (DNNs)?
 
-A **Deep Neural Network (DNN)** extends the idea of a traditional **Artificial Neural Network (ANN)** by adding multiple hidden layers between the input and output.  
-Each layer transforms the data into higher-level abstractions, allowing the model to learn complex mappings.
+A **Deep Neural Network (DNN)** extends a traditional **Artificial Neural Network (ANN)** by adding multiple hidden layers.  
+Each layer transforms the data into higher-level abstractions, allowing the network to learn complex mappings.
 
 **Mathematical Formulation:**
 
-$$
-\mathbf{z}^{(l)} = \mathbf{W}^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}
-$$
-
-$$
-\mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
-$$
+> **Forward propagation equations:**
+>
+> z<sup>(l)</sup> = W<sup>(l)</sup> · a<sup>(l−1)</sup> + b<sup>(l)</sup>  
+> a<sup>(l)</sup> = σ(z<sup>(l)</sup>)
 
 **Where:**
-
-- \( \mathbf{W}^{(l)} \): weight matrix of layer \( l \)  
-- \( \mathbf{b}^{(l)} \): bias vector  
-- \( \sigma(\cdot) \): activation function  
-- \( \mathbf{a}^{(l-1)} \): activations from the previous layer  
-
-**Comparison:**
-
-| Concept | ANN | DNN |
-|:--|:--|:--|
-| Depth | 1–2 hidden layers | Many hidden layers |
-| Feature learning | Manual | Automatic |
-| Computation | Simpler | More complex |
-| Applications | Basic tasks (e.g., regression) | Complex tasks (e.g., image, speech, text) |
+- **W<sup>(l)</sup>** — weight matrix of layer *l*  
+- **b<sup>(l)</sup>** — bias vector  
+- **σ(·)** — activation function  
+- **a<sup>(l−1)</sup>** — activations from the previous layer
 
 ---
 
 ### 3. The Perceptron — The Building Block
 
-The **Perceptron** is the simplest form of a neural network, consisting of a single neuron that performs a linear combination of inputs and passes the result through an activation function.
+The **Perceptron** is the simplest form of a neural network, consisting of a single neuron that performs a linear combination of inputs and passes it through an activation function.
 
 **Equation:**
 
-$$
-y = f(\mathbf{w}^T \mathbf{x} + b)
-$$
+> y = f(wᵀx + b)
 
 **Where:**
-
-- \( \mathbf{w} \): weight vector  
-- \( \mathbf{x} \): input vector  
-- \( b \): bias term  
-- \( f(\cdot) \): activation (step or sign function)
+- **w** — weight vector  
+- **x** — input vector  
+- **b** — bias term  
+- **f(·)** — activation (step or sign function)
 
 **Limitations:**
-- Can only solve **linearly separable** problems (e.g., fails on XOR)
+- Can only solve **linearly separable** problems (fails on XOR)
 - No hidden layers → limited representation power
 
 ---
 
 ### 4. Multi-Layer Perceptron (MLP)
 
-To overcome the Perceptron’s limitations, **Multi-Layer Perceptrons (MLPs)** introduce **hidden layers** and **non-linear activation functions**, enabling the network to learn **non-linear relationships**.
+The **MLP** introduces **hidden layers** and **non-linear activation functions**, enabling the network to model complex patterns.
 
 **Forward Propagation:**
 
-$$
-\mathbf{a}^{(0)} = \mathbf{x}
-$$
+> a<sup>(0)</sup> = x  
+> z<sup>(l)</sup> = W<sup>(l)</sup> · a<sup>(l−1)</sup> + b<sup>(l)</sup>  
+> a<sup>(l)</sup> = σ(z<sup>(l)</sup>)
 
-$$
-\mathbf{z}^{(l)} = \mathbf{W}^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}
-$$
+**Common Activation Functions:**
 
-$$
-\mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
-$$
+| Function | Formula | Description |
+|:--|:--|:--|
+| Sigmoid | 1 / (1 + e<sup>−x</sup>) | Smooth output between 0 and 1 |
+| Tanh | (e<sup>x</sup> − e<sup>−x</sup>) / (e<sup>x</sup> + e<sup>−x</sup>) | Outputs between −1 and 1 |
+| ReLU | max(0, x) | Fast and efficient for deep networks |
 
-**Activation Functions:**
-- Sigmoid: \( \sigma(x) = \frac{1}{1 + e^{-x}} \)
-- Tanh: \( \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \)
-- ReLU: \( \text{ReLU}(x) = \max(0, x) \)
+**Loss Function (MSE):**
 
-**Loss Function Example:**
-
-- Mean Squared Error (MSE):
-
-$$
-\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-$$
-
-**Conceptual Steps:**
-1. Initialize weights and biases randomly  
-2. Perform forward propagation  
-3. Compute the loss  
-4. Adjust weights via gradient descent (in later modules)
+> MSE = (1/n) Σ (yᵢ − ŷᵢ)²
 
 ---
 
-##  Recommended Reading
+## Recommended Reading
 
-- **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** — Aurélien Géron (Chapters 10–11)  
-- **Deep Learning Specialization (Andrew Ng, Coursera)** — Course 1: *Neural Networks and Deep Learning*  
-- **Deep Learning A–Z™ (Udemy)** — Section 1–2: *ANN and MLP Basics*  
-- **3Blue1Brown YouTube Series** — *Neural Networks* and *Backpropagation* explained visually  
+- **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** — Aurélien Géron (Ch. 10–11)  
+- **Deep Learning Specialization** — Andrew Ng (Coursera)  
+- **Deep Learning A–Z™** — Udemy  
+- **3Blue1Brown YouTube Series** — *Neural Networks* and *Backpropagation*
 
 ---
 
 ## Sources & References
 
-- [**Deep Learning (DL) vs Machine Learning (ML): A Comparative Guide** — DataCamp](https://www.datacamp.com/tutorial/machine-deep-learning)  
-- [**Introduction to Neural Networks** — DataCamp](https://www.datacamp.com/tutorial/introduction-to-deep-neural-networks)  
-- [**Multilayer Perceptrons in Machine Learning** — DataCamp](https://www.datacamp.com/tutorial/multilayer-perceptrons-in-machine-learning)  
-- [**Neural Networks – A Beginner’s Guide** — GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/neural-networks-a-beginners-guide/)
+- [Deep Learning (DL) vs Machine Learning (ML): A Comparative Guide — DataCamp](https://www.datacamp.com/tutorial/machine-deep-learning)  
+- [Introduction to Neural Networks — DataCamp](https://www.datacamp.com/tutorial/introduction-to-deep-neural-networks)  
+- [Multilayer Perceptrons — DataCamp](https://www.datacamp.com/tutorial/multilayer-perceptrons-in-machine-learning)  
+- [Neural Networks – A Beginner’s Guide — GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/neural-networks-a-beginners-guide/)
+
+---
+
+> This section builds the **theoretical foundation** for neural networks.  
