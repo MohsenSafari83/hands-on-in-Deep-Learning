@@ -55,6 +55,10 @@ $$
 - **Slow convergence** in flat regions.  
 - **Oscillations** in steep or irregular loss surfaces.
 
+![gradient descent](images/gd_gif.gif)
+
+
+aaa.png
 ---
 
 ## 2️. Momentum Optimization
@@ -101,6 +105,7 @@ $$
 - **First Momentum →** direction (velocity)  
 - **Second Momentum →** step size (adaptive scaling)  
 - Combined, they form the basis for the **Adam optimizer**.
+![moo](images/aaa.png)
 
 ---
 
@@ -138,6 +143,7 @@ $( \beta_1 = 0.9, \ \beta_2 = 0.999, \ \epsilon = 10^{-8} $)
 ---
 
 ## 4️. Newton’s Method
+![mo](images/newton.webp)
 
 Newton’s Method uses **second-order derivatives** to adjust the update direction and step size using curvature information (the Hessian matrix).
 
