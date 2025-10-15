@@ -1,3 +1,10 @@
+```
+graph TD
+    A[Deep Learning Optimization Techniques] --> B(Gradient Descent)
+    A --> C(Momentum Optimization)
+    A --> D(Adam Optimizer)
+    A --> E(Newton’s Optimization)
+  ```
 #  Optimization in Neural Networks
 
 ## Introduction
