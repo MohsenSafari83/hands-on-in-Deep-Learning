@@ -1,9 +1,26 @@
 ```Mermaid
-  graph TD
-    A[Deep Learning Optimization Techniques] --> B(Gradient Descent)
-    A --> C(Momentum Optimization)
-    A --> D(Adam Optimizer)
-    A --> E(Newton’s Optimization)
+graph TD
+    OPT[Deep Learning Optimization]
+
+    %% Main Categories (Branching from OPT)
+    FO[First-Order Methods]
+    SO[Second-Order Methods]
+    OPT --> FO
+    OPT --> SO
+
+    %% First-Order Sub-Categories
+    FO --> FO1[Basic Descent]
+    FO --> FO2[Momentum Based]
+    FO --> FO3[Adaptive Learning Rate]
+
+    %% Specific First-Order Techniques
+    FO1 --> T1(Gradient Descent)
+    FO2 --> T2(Momentum Optimization)
+    FO3 --> T3(Adam Optimizer)
+
+    %% Second-Order Techniques
+    SO --> SO1[Hessian Based Methods]
+    SO1 --> T4(Newton's Optimization)
 ```
 #  Optimization in Neural Networks
 
