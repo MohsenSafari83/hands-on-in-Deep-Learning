@@ -2,22 +2,22 @@
 graph TD
     OPT[Deep Learning Optimization]
 
-    %% Gradient Desent
-    GD[Gradient Desent]
+    %% Gradient Descent (First-Order Methods)
+    GD[Gradient Descent]
     OPT --> GD
 
-    %% Momentum Optimization
+    %% Momentum-Based Optimizers
     MO[Momentum Optimization]
     OPT --> MO
-    MO -->MO [First Momentum]
-    MO --> MO [Second Momentum (RMSprop)]
+    MO --> M1(First Moment)
+    MO --> M2(Second Moment - RMSprop)
 
-    %%  Adam Optimizer
-    AO[Momentum Optimization]
+    %% Adaptive Optimizer
+    AO[Adam Optimizer]
     OPT --> AO
 
-    %%  Newton’s optimization
-    NO[Newton’s optimization]
+    %% Second-Order Optimizer
+    NO[Newton’s Optimization]
     OPT --> NO
 ```
 #  Optimization in Neural Networks
