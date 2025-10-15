@@ -1,4 +1,4 @@
-```Mermaid
+```mermaid
 graph TD
     OPT[Deep Learning Optimization]
 
