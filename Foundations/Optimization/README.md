@@ -157,3 +157,39 @@ where $( H $) is the **Hessian matrix** (matrix of second derivatives).
 
 > ⚡ **In short:**  
 > Neural network optimization starts with Gradient Descent, improves with Momentum, adapts with Adam, and theoretically perfects with Newton’s Method — though practical constraints often decide which is used.
+
+---
+
+## References by Section
+
+###  Gradient Descent
+- [Mastering Gradient Descent: Optimizing Neural Networks with Precision – Medium (@ompramod)](https://ompramod.medium.com/mastering-gradient-descent-optimizing-neural-networks-with-precision-44056f9f32b0)
+- [The Loss Surface of Multilayer Networks – Medium (@bekushal)](https://bekushal.medium.com/the-loss-surface-of-multilayer-networks-7936042564cd)
+
+---
+
+###  Momentum Optimization
+- [Momentum in Optimization – Cornell University](https://optimization.cbe.cornell.edu/index.php?title=Momentum)
+- [Momentum-Based Gradient Optimizer – GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/ml-momentum-based-gradient-optimizer-introduction/)
+- [The Case for Momentum – Distill](https://distill.pub/2017/momentum/)
+
+---
+
+###  RMSProp Optimizer
+- [RMSProp Optimizer Tutorial – DataCamp](https://www.datacamp.com/tutorial/rmsprop-optimizer-tutorial)
+- [Understanding RMSProp: A Simple Guide – Medium (@piyushkashyap045)](https://medium.com/@piyushkashyap045/understanding-rmsprop-a-simple-guide-to-one-of-deep-learnings-powerful-optimizers-403baeed9922)
+- [RMSProp Optimizer in Deep Learning – GeeksforGeeks](https://www.geeksforgeeks.org/deep-learning/rmsprop-optimizer-in-deep-learning/)
+
+---
+
+### Adam Optimizer
+- [What is Adam Optimizer? – Analytics Vidhya](https://www.analyticsvidhya.com/blog/2023/09/what-is-adam-optimizer/)
+- [Adam Optimizer – GeeksforGeeks](https://www.geeksforgeeks.org/deep-learning/adam-optimizer/)
+- [Adam Optimizer Tutorial – DataCamp](https://www.datacamp.com/tutorial/adam-optimizer-tutorial)
+
+---
+
+###  Newton’s Method
+- [Newton’s Method in Machine Learning – GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/newtons-method-in-machine-learning/)
+- [Newton’s Method for Optimization in Python – Medium (@axegggl)](https://medium.com/@axegggl/newtons-method-for-optimization-in-python-11ce261fcf98)
+
