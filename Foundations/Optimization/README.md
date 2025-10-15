@@ -105,7 +105,7 @@ $$
 - **Second Momentum →** step size (adaptive scaling)  
 - Combined, they form the basis for the **Adam optimizer**.
   
-![moo](images/aaa.png)
+![moo](images/1Tm1ycCwnBXNJ7BF0Ayv-A-1024x635.webp)
 
 ---
 
