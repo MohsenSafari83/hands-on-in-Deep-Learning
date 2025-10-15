@@ -58,7 +58,6 @@ $$
 ![gradient descent](images/gd_gif.gif)
 
 
-aaa.png
 ---
 
 ## 2️. Momentum Optimization
