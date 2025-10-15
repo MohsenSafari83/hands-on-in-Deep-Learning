@@ -165,15 +165,16 @@ where $( H $) is the **Hessian matrix** (matrix of second derivatives).
 - Can converge to saddle points in non-convex surfaces  
 
 ---
-
-## Summary
-
-| Optimizer | Type | Memory | Adaptivity | Pros | Cons |
-|------------|------|---------|-------------|------|------|
-| **Gradient Descent** | First-order | Low | ✗ | Simple, intuitive | Sensitive to LR, slow |
-| **Momentum** | First-order + history | Medium | ✗ | Smoother, faster convergence | Needs tuning (β₁) |
-| **Adam** | First-order adaptive | Medium | ✓ | Fast, robust, adaptive | Sometimes poorer generalization |
-| **Newton’s Method** | Second-order | High | ✓ | Fast near minima | Computationally heavy |
+| Feature / Optimizer            | SGD                                           | AdaGrad                                             | RMSprop                                                        | Adam                                                                 |
+|--------------------------------|-----------------------------------------------|----------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------------|
+| **Learning Rate**               | Fixed learning rate                           | Adaptive, but decreases over time                 | Adaptive, based on recent gradient magnitudes                  | Adaptive, combines momentum and RMSprop-style learning rates         |
+| **Momentum**                    | Optional (Momentum term can be added)        | No                                                 | No (momentum-like behavior via moving average of gradients)   | Yes, built-in momentum via moving averages of gradients              |
+| **Gradient Scaling**            | Uniform across all parameters                 | Per-parameter scaling (based on historical gradients) | Per-parameter scaling (moving average of squared gradients)   | Per-parameter scaling (moving averages of first and second moments) |
+| **Performance on Non-Convex Functions** | Struggles with non-convex functions, can get stuck in local minima | Struggles due to diminishing learning rates over time | Effective, especially on non-stationary and non-convex problems | Very effective due to adaptive learning rates and momentum           |
+| **Convergence Speed**            | Slow without momentum                          | Slows down over time due to shrinking learning rate | Faster convergence compared to AdaGrad and SGD                | Fast convergence, especially on large and complex datasets           |
+| **Hyperparameters**             | Learning rate (and momentum if used)          | Learning rate                                      | Learning rate, decay rate, epsilon                             | Learning rate, beta1, beta2, epsilon                                  |
+| **Memory Usage**                 | Low                                           | High (accumulates squared gradients)              | Moderate (stores moving average of squared gradients)          | Higher (stores moving averages of gradients and squared gradients)   |
+| **Use Cases**                    | Simple tasks, convex functions                | Sparse data, convex problems                       | RNNs, non-convex optimization problems, non-stationary objectives | Deep learning, large datasets, complex models (CNNs, RNNs)          |
 
 ---
 
