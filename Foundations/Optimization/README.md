@@ -1,4 +1,4 @@
-#  Optimization in Neural Networks
+# 🚀 Optimization in Neural Networks
 
 ## Introduction
 The foundation of neural network training lies in **Gradient Descent**.  
@@ -15,17 +15,16 @@ To overcome these limitations, advanced optimizers such as **Momentum**, **Adam*
 
 ## 1️⃣ Gradient Descent — Overview
 
-**Goal:** Minimize the loss function \( J(w) \) with respect to weights \( w \):
+**Goal:** Minimize the loss function `J(w)` with respect to weights `w`:
 
-\[
-w^{*} = \arg\min_{w} J(w)
-\]
+`w* = argmin_w J(w)`
+
 **Update Rule:**
-\[
-w_{t+1} = w_t - \eta \nabla_w J(w_t)
-\]
+
+`w_{t+1} = w_t - η ∇_w J(w_t)`
+
 **Limitations:**
-- Sensitive to the choice of **learning rate** \( \eta \).  
+- Sensitive to the choice of **learning rate** `η`.  
 - Can get **stuck** in local minima.  
 - **Slow convergence** in flat regions.  
 - **Oscillations** in steep or irregular loss surfaces.
@@ -41,36 +40,26 @@ Momentum introduces **memory** into gradient descent — it accumulates the dire
 
 **Update Equations:**
 
-\[
-m_{t+1} = \beta_1 m_t + (1 - \beta_1)\nabla_w J(w_t)
-\]
+`m_{t+1} = β₁ m_t + (1 - β₁) ∇_w J(w_t)`
 
-\[
-w_{t+1} = w_t - \eta m_{t+1}
-\]
+`w_{t+1} = w_t - η m_{t+1}`
 
-where \( \beta_1 \) ∈ [0.9, 0.99] controls the influence of past gradients.
+where `β₁ ∈ [0.9, 0.99]` controls the influence of past gradients.
 
 ---
 
 ### Second Momentum (Variance Term)
 Tracks the **moving average of squared gradients**, controlling step size adaptively:
 
-\[
-v_{t+1} = \beta_2 v_t + (1 - \beta_2)(\nabla_w J(w_t))^2
-\]
+`v_{t+1} = β₂ v_t + (1 - β₂) (∇_w J(w_t))²`
 
 ---
 
 ### Bias Correction
-To counter early-step bias (since \( m_0 = v_0 = 0 \)):
+To counter early-step bias (since `m₀ = v₀ = 0`):
 
-
-
-\[
-\hat{m}_t = \frac{m_t}{1 - \beta_1^t}, \quad 
-\hat{v}_t = \frac{v_t}{1 - \beta_2^t}
-\]
+`m̂_t = m_t / (1 - β₁^t)`  
+`v̂_t = v_t / (1 - β₂^t)`
 
 ---
 
@@ -81,30 +70,22 @@ To counter early-step bias (since \( m_0 = v_0 = 0 \)):
 
 ---
 
-## 3️. Adam Optimizer (Adaptive Moment Estimation)
+## 3️⃣ Adam Optimizer (Adaptive Moment Estimation)
 
 Adam combines both **momentum** and **adaptive learning rate** mechanisms.
 
 **Equations:**
-\[
-m_{t+1} = \beta_1 m_t + (1 - \beta_1)\nabla_w J(w_t)
-\]
 
-\[
-v_{t+1} = \beta_2 v_t + (1 - \beta_2)(\nabla_w J(w_t))^2
-\]
+`m_{t+1} = β₁ m_t + (1 - β₁) ∇_w J(w_t)`  
+`v_{t+1} = β₂ v_t + (1 - β₂) (∇_w J(w_t))²`
 
-\[
-\hat{m}_{t+1} = \frac{m_{t+1}}{1 - \beta_1^{t+1}}, \quad
-\hat{v}_{t+1} = \frac{v_{t+1}}{1 - \beta_2^{t+1}}
-\]
+`m̂_{t+1} = m_{t+1} / (1 - β₁^{t+1})`  
+`v̂_{t+1} = v_{t+1} / (1 - β₂^{t+1})`
 
-\[
-w_{t+1} = w_t - \eta \frac{\hat{m}_{t+1}}{\sqrt{\hat{v}_{t+1}} + \epsilon}
-\]
+`w_{t+1} = w_t - η * (m̂_{t+1} / (√(v̂_{t+1}) + ε))`
 
 **Typical Parameters:**  
-\(\beta_1 = 0.9, \ \beta_2 = 0.999, \ \epsilon = 10^{-8}\)
+`β₁ = 0.9`, `β₂ = 0.999`, `ε = 10⁻⁸`
 
 **Advantages:**
 - Fast convergence  
@@ -113,24 +94,20 @@ w_{t+1} = w_t - \eta \frac{\hat{m}_{t+1}}{\sqrt{\hat{v}_{t+1}} + \epsilon}
 
 ---
 
-## 4️. Newton’s Method
+## 4️⃣ Newton’s Method
 
 Newton’s Method uses **second-order derivatives** to adjust the update direction and step size using curvature information (the Hessian matrix).
 
 **Concept:**
-Find \( x \) where \( f'(x) = 0 \), then iteratively update:
+Find `x` where `f'(x) = 0`, then iteratively update:
 
-\[
-x_{t+1} = x_t - \frac{f'(x_t)}{f''(x_t)}
-\]
+`x_{t+1} = x_t - f'(x_t) / f''(x_t)`
 
 For optimization in multiple dimensions:
 
-\[
-  w_{t+1} = w_t - H^{-1}\nabla_w J(w_t)
-\]
+`w_{t+1} = w_t - H⁻¹ ∇_w J(w_t)`
 
-where \( H \) is the **Hessian matrix** (matrix of second derivatives).
+where `H` is the **Hessian matrix** (matrix of second derivatives).
 
 **Pros:**
 - Quadratic convergence near minima  
