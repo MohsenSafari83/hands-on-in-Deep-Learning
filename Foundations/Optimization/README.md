@@ -2,25 +2,23 @@
 graph TD
     OPT[Deep Learning Optimization]
 
-    %% Main Categories (Branching from OPT)
-    FO[First-Order Methods]
-    SO[Second-Order Methods]
-    OPT --> FO
-    OPT --> SO
+    %% Gradient Desent
+    GD[Gradient Desent]
+    OPT --> GD
 
-    %% First-Order Sub-Categories
-    FO --> FO1[Basic Descent]
-    FO --> FO2[Momentum Based]
-    FO --> FO3[Adaptive Learning Rate]
+    %% Momentum Optimization
+    MO[Momentum Optimization]
+    OPT --> MO
+    MO -->MO [First Momentum]
+    MO --> MO [Second Momentum (RMSprop)]
 
-    %% Specific First-Order Techniques
-    FO1 --> T1(Gradient Descent)
-    FO2 --> T2(Momentum Optimization)
-    FO3 --> T3(Adam Optimizer)
+    %%  Adam Optimizer
+    AO[Momentum Optimization]
+    OPT --> AO
 
-    %% Second-Order Techniques
-    SO --> SO1[Hessian Based Methods]
-    SO1 --> T4(Newton's Optimization)
+    %%  Newton’s optimization
+    NO[Newton’s optimization]
+    OPT --> NO
 ```
 #  Optimization in Neural Networks
 
