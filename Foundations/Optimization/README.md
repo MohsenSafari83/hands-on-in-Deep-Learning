@@ -1,5 +1,4 @@
-```
- Mermaid
+```Mermaid
   graph TD
     A[Deep Learning Optimization Techniques] --> B(Gradient Descent)
     A --> C(Momentum Optimization)
