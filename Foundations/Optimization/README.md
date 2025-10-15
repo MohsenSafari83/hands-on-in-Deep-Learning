@@ -104,6 +104,7 @@ $$
 - **First Momentum →** direction (velocity)  
 - **Second Momentum →** step size (adaptive scaling)  
 - Combined, they form the basis for the **Adam optimizer**.
+  
 ![moo](images/aaa.png)
 
 ---
