@@ -1,4 +1,4 @@
-# 🚀 Optimization in Neural Networks
+#  Optimization in Neural Networks
 
 ## Introduction
 The foundation of neural network training lies in **Gradient Descent**.  
@@ -13,9 +13,9 @@ To overcome these limitations, advanced optimizers such as **Momentum**, **Adam*
 
 ---
 
-## 1️⃣ Gradient Descent — Overview
+## 1️. Gradient Descent — Overview
 
-**Goal:** Minimize the loss function \( J(w) \) with respect to weights \( w \):
+**Goal:** Minimize the loss function $( J(w) $) with respect to weights $( w $):
 
 $$
 w^{*} = \arg\min_{w} J(w)
@@ -35,7 +35,7 @@ $$
 
 ---
 
-## 2️⃣ Momentum Optimization
+## 2️. Momentum Optimization
 
 Momentum introduces **memory** into gradient descent — it accumulates the direction of past gradients to build “velocity” that helps escape shallow minima and smooths oscillations.
 
@@ -52,7 +52,7 @@ $$
 w_{t+1} = w_t - \eta m_{t+1}
 $$
 
-where \( \beta_1 \in [0.9, 0.99] \) controls the influence of past gradients.
+where $( \beta_1 \in [0.9, 0.99] $) controls the influence of past gradients.
 
 ---
 
@@ -66,7 +66,7 @@ $$
 ---
 
 ### Bias Correction
-To counter early-step bias (since \( m_0 = v_0 = 0 \)):
+To counter early-step bias (since $( m_0 = v_0 = 0 $)):
 
 $$
 \hat{m}_t = \frac{m_t}{1 - \beta_1^t}, \quad 
@@ -82,7 +82,7 @@ $$
 
 ---
 
-## 3️⃣ Adam Optimizer (Adaptive Moment Estimation)
+## 3️. Adam Optimizer (Adaptive Moment Estimation)
 
 Adam combines both **momentum** and **adaptive learning rate** mechanisms.
 
@@ -106,7 +106,7 @@ w_{t+1} = w_t - \eta \frac{\hat{m}_{t+1}}{\sqrt{\hat{v}_{t+1}} + \epsilon}
 $$
 
 **Typical Parameters:**  
-\( \beta_1 = 0.9, \ \beta_2 = 0.999, \ \epsilon = 10^{-8} \)
+$( \beta_1 = 0.9, \ \beta_2 = 0.999, \ \epsilon = 10^{-8} $)
 
 **Advantages:**
 - Fast convergence  
@@ -115,12 +115,12 @@ $$
 
 ---
 
-## 4️⃣ Newton’s Method
+## 4️. Newton’s Method
 
 Newton’s Method uses **second-order derivatives** to adjust the update direction and step size using curvature information (the Hessian matrix).
 
 **Concept:**
-Find \( x \) where \( f'(x) = 0 \), then iteratively update:
+Find $( x \) where \( f'(x) = 0 $), then iteratively update:
 
 $$
 x_{t+1} = x_t - \frac{f'(x_t)}{f''(x_t)}
@@ -132,7 +132,7 @@ $$
 w_{t+1} = w_t - H^{-1}\nabla_w J(w_t)
 $$
 
-where \( H \) is the **Hessian matrix** (matrix of second derivatives).
+where $( H $) is the **Hessian matrix** (matrix of second derivatives).
 
 **Pros:**
 - Quadratic convergence near minima  
