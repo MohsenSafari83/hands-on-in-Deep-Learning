@@ -32,25 +32,31 @@ J_{\lambda}(w) = J(w) + \lambda R(w)
 $$
 
 Where:  
-- $(J(w)$) → Data loss  
-- $(\lambda R(w)$) → Regularization term
+- \(J(w)\) → Data loss  
+- \(\lambda R(w)\) → Regularization term
 
-- **L1 Regularization (Lasso):**  
+- **L1 Regularization (Lasso):**
+ 
 $$
 L1 = \lambda \sum_{j=1}^{m} |w_j|
 $$ 
+
 Encourages sparsity by driving some weights to zero.
 
-- **L2 Regularization (Ridge):**  
+- **L2 Regularization (Ridge):**
+  
 $$
 L2 = \lambda \sum_{j=1}^{m} w_j^2 = \lambda W^T W
 $$  
+
 Shrinks weights but keeps all features.
 
-- **Elastic Net (L1 + L2):**  
+- **Elastic Net (L1 + L2):**
+  
 $$
 Elastic\ Net = \lambda \sum_{j=1}^{m} \left( \beta |w_j| + \frac{1-\beta}{2} w_j^2 \right)
 $$
+
 Balances sparsity and stability, effective for correlated features.
 
 ### Dropout
@@ -66,6 +72,7 @@ $$
 $$
 W_{\text{scaled}} = W \times (1-p)
 $$
+
 - **Effect:** Trains multiple “thinned” sub-networks, averages their outputs at test time, and improves generalization.
 
 - **Best Practices:**  
