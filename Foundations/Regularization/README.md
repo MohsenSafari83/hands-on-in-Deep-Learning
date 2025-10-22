@@ -24,24 +24,24 @@ This repository contains organized notes, explanations, and resources on key **d
 
 - **Goal:** Prevent overfitting by adding a penalty term to the loss function.
 
-$$
+\[
 J_{\lambda}(w) = J(w) + \lambda R(w)
-$$
+\]
 
 Where:  
-- $(J(w)$) → Data loss  
-- $(\lambda R(w)$) → Regularization term
+- \(J(w)\) → Data loss  
+- \(\lambda R(w)\) → Regularization term
 
 - **L1 Regularization (Lasso):**  
-$$
+\[
 L1 = \lambda \sum_{j=1}^{m} |w_j|
-$$
+\]  
 Encourages sparsity by driving some weights to zero.
 
 - **L2 Regularization (Ridge):**  
-$$
+\[
 L2 = \lambda \sum_{j=1}^{m} w_j^2 = \lambda W^T W
-$$  
+\]  
 Shrinks weights but keeps all features.
 
 - **Elastic Net (L1 + L2):**  
