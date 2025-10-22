@@ -17,10 +17,6 @@ This repository contains organized notes, explanations, and resources on key **d
   - **Bias:** Systematic error due to overly simplified assumptions. High bias → underfitting.
   - **Variance:** Sensitivity to small changes in training data. High variance → overfitting.
 ---
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 ##  Regularization & Dropout
 
 ### Regularization
@@ -33,7 +29,7 @@ $$
 
 Where:  
 - \(J(w)\) → Data loss  
-- (\lambda R(w)\) → Regularization term
+- \(lambda R(w)\) → Regularization term
 
 - **L1 Regularization (Lasso):**
  
