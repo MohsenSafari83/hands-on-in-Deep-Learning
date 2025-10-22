@@ -33,7 +33,7 @@ $$
 
 Where:  
 - \(J(w)\) → Data loss  
-- \(\lambda R(w)\) → Regularization term
+- (\lambda R(w)\) → Regularization term
 
 - **L1 Regularization (Lasso):**
  
